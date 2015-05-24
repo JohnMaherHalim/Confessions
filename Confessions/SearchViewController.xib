@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="tableView" destination="efQ-oj-kcr" id="MjW-F1-Vj4"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="efQ-oj-kcr">
+                    <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PVy-tL-DmF"/>
+                        <outlet property="delegate" destination="-1" id="hEY-Sq-A1j"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qgH-uN-Gzv">
+                    <rect key="frame" x="0.0" y="70" width="600" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="zSM-jI-y3h"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="qgH-uN-Gzv" secondAttribute="centerX" id="2Tt-tu-j2S"/>
+                <constraint firstItem="efQ-oj-kcr" firstAttribute="top" secondItem="1" secondAttribute="top" constant="60" id="Kgl-hO-epe"/>
+                <constraint firstItem="qgH-uN-Gzv" firstAttribute="top" secondItem="1" secondAttribute="top" constant="70" id="Ng4-PM-va3"/>
+                <constraint firstItem="qgH-uN-Gzv" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="WCb-MA-PFP"/>
+                <constraint firstItem="efQ-oj-kcr" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="odK-Uf-LNm"/>
+                <constraint firstAttribute="bottom" secondItem="efQ-oj-kcr" secondAttribute="bottom" id="rFQ-Ga-ERH"/>
+                <constraint firstAttribute="trailing" secondItem="efQ-oj-kcr" secondAttribute="trailing" id="rt9-Hm-gTL"/>
+                <constraint firstAttribute="centerX" secondItem="efQ-oj-kcr" secondAttribute="centerX" id="s5w-En-DkW"/>
+                <constraint firstAttribute="trailing" secondItem="qgH-uN-Gzv" secondAttribute="trailing" id="z2d-Rq-rQF"/>
+            </constraints>
+            <point key="canvasLocation" x="556" y="447"/>
+        </view>
+    </objects>
+</document>

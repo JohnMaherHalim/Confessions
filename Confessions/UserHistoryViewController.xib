@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserHistoryViewController">
+            <connections>
+                <outlet property="tableView" destination="wHL-mj-dLN" id="Atz-RN-hRE"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wHL-mj-dLN">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="482"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Vdn-7l-XLi"/>
+                        <outlet property="delegate" destination="-1" id="4SG-ED-Lx7"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNW-yw-jnI">
+                    <rect key="frame" x="241" y="500" width="119" height="30"/>
+                    <state key="normal" title="Confessed Today">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confessedtoday:" destination="-1" eventType="touchUpInside" id="wp0-jd-ie2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wHL-mj-dLN" firstAttribute="top" secondItem="1" secondAttribute="top" id="8xS-VN-Wxx"/>
+                <constraint firstAttribute="trailing" secondItem="wHL-mj-dLN" secondAttribute="trailing" id="Bfr-Jj-h27"/>
+                <constraint firstAttribute="centerX" secondItem="CNW-yw-jnI" secondAttribute="centerX" id="Hvd-MT-r5H"/>
+                <constraint firstItem="CNW-yw-jnI" firstAttribute="top" secondItem="wHL-mj-dLN" secondAttribute="bottom" constant="18" id="Oec-Z4-eg3"/>
+                <constraint firstItem="wHL-mj-dLN" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="o7S-Gs-nER"/>
+                <constraint firstAttribute="bottom" secondItem="CNW-yw-jnI" secondAttribute="bottom" constant="70" id="xIQ-yc-mIq"/>
+            </constraints>
+            <point key="canvasLocation" x="556" y="447"/>
+        </view>
+    </objects>
+</document>
